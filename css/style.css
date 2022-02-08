@@ -6,9 +6,10 @@ body {
 .site-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 150px;
+    grid-template-rows: 200px 200px 123px 200px;
     grid-template-areas:
         ". drawing ."
+        ". earth ."
         ". hire-me ."
         ". form .";
     ;
@@ -19,15 +20,29 @@ body {
     color: black;
     font-size: 40px;
     grid-area: drawing;
+    background-color: orangered;
+    border: 2px solid black;
+}
+
+.earth {
+    grid-area: earth;
 }
 
 .form {
     grid-area: form;
     text-align: center;
+    background-color: orangered;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .hire-me {
     text-align: center;
     font-size: 25px;
     grid-area: hire-me;
+    background-color: orangered;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
 }
