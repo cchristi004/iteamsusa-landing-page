@@ -1,12 +1,33 @@
 body {
-    background-color: black;
+    background-color: tan;
+    font-family: lobster;
 }
 
 .site-wrap {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 150px;
+    grid-template-areas:
+        ". drawing ."
+        ". hire-me ."
+        ". form .";
+    ;
 }
 
 .drawing-header {
     text-align: center;
-    color: white;
+    color: black;
+    font-size: 40px;
+    grid-area: drawing;
+}
+
+.form {
+    grid-area: form;
+    text-align: center;
+}
+
+.hire-me {
+    text-align: center;
+    font-size: 25px;
+    grid-area: hire-me;
 }
