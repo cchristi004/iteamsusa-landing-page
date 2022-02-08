@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+}
+
+.site-wrap {
+    display: grid;
+}
+
+.drawing-header {
+    text-align: center;
+    color: white;
+}
